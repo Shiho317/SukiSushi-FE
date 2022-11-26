@@ -1,0 +1,52 @@
+.suki-wrapper{
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  overflow: scroll;
+  -ms-overflow-style: none;    /* IE, Edge */
+  scrollbar-width: none;
+}
+
+.back-home {
+  color: var(--blue-color);
+  font-size: 1.5rem;
+}
+
+.back-home:hover {
+  opacity: 0.8;
+}
+
+.suki-wrapper::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari */
+}
+
+.header-title{
+  display: flex;
+  align-items: center;
+  color: var(--blue-color);
+  font-size: 1.5rem;
+  gap: 0.5rem;
+}
+
+.header-title h1{
+  color: var(--black-color);
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .back-home {
+    font-size: 2rem;
+  }
+
+  .header-title {
+    font-size: 2rem;
+  }
+
+  .header-title h1 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,98 @@
+.card {
+  width: 13rem;
+  height: 10rem;
+  background: var(--base-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.image-wrap{
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image-wrap img{
+  width: 100%;
+  height: 100%;
+}
+
+.restaurant-details {
+  width: 5rem;
+  height: 100%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  -ms-overflow-style: none;    /* IE, Edge */
+  scrollbar-width: none;
+}
+
+.restaurant-details::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari */
+}
+
+.restaurant-details h3{
+  color: var(--blue-color);
+}
+
+.restaurant-reviews {
+  color: yellow;
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+}
+
+.restaurant-reviews p{
+  color: var(--black-color);
+}
+
+.restaurant-address p{
+  color: var(--black-color);
+}
+
+.isClosed {
+  color: var(--black-color);
+}
+
+.isOpen {
+  color: var(--lightblue-color);
+}
+
+.price-rage {
+  color: var(--lightblue-color);
+}
+
+.unfavourite,
+.favourite{
+  color: var(--blue-color);
+  font-size: 1.2rem;
+  text-align: end;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .card{
+    width: 20rem;
+    height: 15rem;
+  }
+
+  .image-wrap{
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .restaurant-details {
+    width: 10rem;
+    height: unset;
+  }
+
+  .restaurant-reviews {
+    gap: 0.5rem;
+  }
+}
