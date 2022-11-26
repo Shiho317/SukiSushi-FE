@@ -26,6 +26,10 @@ https://cryptic-oasis-17891.herokuapp.com/
 
 `vercel`, `render`
 
+## Server-side
+
+https://github.com/Shiho317/SukiSushi-BE
+
 ## About
 :white_check_mark: Map application which provides location of sushi restaurant in Vancouver, CA.  
 :white_check_mark: Using graphQL to fetch Yelp API for datas about sushi restaurants.  
