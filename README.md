@@ -12,7 +12,7 @@
 ![sukisushi-demo2](https://user-images.githubusercontent.com/88401910/166632334-e32e3723-94c3-4368-8781-b2df5d3cb08c.jpg)
 ![sukisushi-demo3](https://user-images.githubusercontent.com/88401910/166632338-0714caa5-9cd6-49cc-8b92-3538f939caf2.jpg)
 
-https://cryptic-oasis-17891.herokuapp.com/
+https://suki-sushi.vercel.app/
 
 #### demo account
 - `email`: test1@mail.com `password`: test1test1  
