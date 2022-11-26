@@ -10,7 +10,7 @@ import SignUp from "./components/SignUp/SignUp";
 import Favourite from "./components/Favourite/Favourite";
 
 const client = new ApolloClient({
-  uri: "/graphql",
+  uri: "https://suki-sushi-be.onrender.com/graphql",
   cache: new InMemoryCache(),
 });
 

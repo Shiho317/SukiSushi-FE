@@ -24,7 +24,7 @@ https://cryptic-oasis-17891.herokuapp.com/
 
 ## Published
 
-`heroku`
+`vercel`, `render`
 
 ## About
 :white_check_mark: Map application which provides location of sushi restaurant in Vancouver, CA.  
