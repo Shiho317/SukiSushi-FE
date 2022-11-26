@@ -36,7 +36,7 @@ const Card = ({ data, opens, id, lat, long, setIsCurrent }) => {
       categories: categoriesArr,
     };
     try {
-      const res = await axios.post("/api/favourites/add", newFavourite);
+      const res = await axios.post("https://suki-sushi-be.onrender.com/api/favourites/add", newFavourite);
       setFavouritesList([...favouritesList, res.data]);
     } catch (error) {
       console.log(error);
@@ -51,7 +51,7 @@ const Card = ({ data, opens, id, lat, long, setIsCurrent }) => {
       id: data.id,
     };
     try {
-      const res = await axios.post("/api/favourites/delete", removeItem);
+      const res = await axios.post("https://suki-sushi-be.onrender.com/api/favourites/delete", removeItem);
       const filtered = favouritesList.filter((list) => list.id !== res.data.id);
       setFavouritesList(filtered);
     } catch (error) {
@@ -62,7 +62,7 @@ const Card = ({ data, opens, id, lat, long, setIsCurrent }) => {
   useEffect(() => {
     const getMyFavourites = async () => {
       try {
-        const allFavourites = await axios.post("/api/favourites", currentUser);
+        const allFavourites = await axios.post("https://suki-sushi-be.onrender.com/api/favourites", currentUser);
         setFavouritesList(allFavourites.data);
       } catch (error) {
         console.log(error);

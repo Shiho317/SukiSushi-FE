@@ -20,7 +20,7 @@ const Login = () => {
     };
 
     try {
-      const res = await axios.post("/api/users/login", user);
+      const res = await axios.post("https://suki-sushi-be.onrender.com/api/users/login", user);
       const currUserObj = {
         name: res.data.username,
         email: res.data.email,

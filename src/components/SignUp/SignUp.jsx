@@ -21,7 +21,7 @@ const SignUp = () => {
         password: userpasswordRef.current.value,
       };
       try {
-        await axios.post("/api/users/signup", newUser);
+        await axios.post("https://suki-sushi-be.onrender.com/api/users/signup", newUser);
         alert("You have successfully created account.");
         setTimeout(() => {
           navigate("/login")

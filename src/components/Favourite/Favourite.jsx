@@ -19,7 +19,7 @@ const Favourite = () => {
     const getMyFavourites = async () => {
       try {
         const allFavourites = await axios.post(
-          "/api/favourites",
+          "https://suki-sushi-be.onrender.com/api/favourites",
           currentUser
         );
         setMyFavs(allFavourites.data);
